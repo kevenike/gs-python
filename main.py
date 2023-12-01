@@ -42,3 +42,19 @@ def agendar_consulta():
         print("Consulta agendada com sucesso!")
     else:
         print("Paciente não encontrado. Por favor, verifique o nome.")
+
+# Função para visualizar a lista de pacientes com a data e o horário da consulta
+def visualizar_lista_pacientes():
+    print("\nLista de Pacientes:\n")
+    for paciente in lista_pacientes:
+        print(f"Nome: {paciente['Nome']}, Idade: {paciente['Idade']}, Documento: {paciente['Documento']}")
+
+        # Verificar se o paciente tem consultas agendadas
+        consultas_paciente = [f"{consulta['Data Consulta']} às {consulta['Horario Consulta']}\n" for consulta in
+                              lista_consultas if consulta['Nome Paciente'] == paciente['Nome']]
+        if consultas_paciente:
+            print(f" Consultas Agendadas: {', '.join(consultas_paciente)}")
+        else:
+            print("  Nenhuma consulta agendada.")
+
+    print()       
