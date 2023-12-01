@@ -23,8 +23,8 @@ Cadastrar Paciente:
 Solicitação do nome, idade e número do documento do paciente.
 Validação para garantir que a idade seja um número e que o número do documento tenha 11 dígitos.
 Armazenamento das informações do paciente em uma lista.
-Agendar Consulta:
 
+Agendar Consulta:
 Solicitação do nome do paciente, data e horário da consulta.
 Verificação se o paciente está cadastrado antes de agendar a consulta.
 Armazenamento das informações da consulta em uma lista.
@@ -57,7 +57,6 @@ Este projeto é uma implementação básica e pode ser expandido conforme necess
 As bibliotecas PyInquirer e colorama foram utilizadas para melhorar a interação e a aparência do sistema no terminal.
 A validação de entrada é fundamental para garantir a integridade dos dados no sistema.
 Este projeto pode servir como base para sistemas hospitalares mais complexos e com funcionalidades adicionais.
-Lembre-se de adaptar o projeto conforme os requisitos específicos do sistema hospitalar que você está desenvolvendo. Este é apenas um exemplo básico para fornecer uma visão geral e começar.
 ============================================
 
 =================================
