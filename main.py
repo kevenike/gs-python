@@ -68,3 +68,12 @@ def validar_numero(mensagem):
         except ValueError:
             print("Por favor, digite um número válido.")
 
+# Função para validar o número do documento
+def validar_documento(mensagem):
+    while True:
+        documento = input(mensagem)
+        if documento.isdigit() and len(
+                documento) == 11:  # Validar se é composto apenas por dígitos e possui o tamanho esperado
+            return documento
+        else:
+            print("Por favor, digite um número de documento válido com 11 dígitos.")
