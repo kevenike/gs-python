@@ -77,3 +77,25 @@ def validar_documento(mensagem):
             return documento
         else:
             print("Por favor, digite um número de documento válido com 11 dígitos.")
+
+# Lista para armazenar pacientes e consultas
+lista_pacientes = []
+lista_consultas = []
+
+# Loop principal do programa
+while True:
+    exibir_menu_principal()
+
+    escolha = validar_numero(Fore.GREEN + "Digite a opção desejada: " + Style.RESET_ALL)
+
+    if escolha == 1:
+        cadastrar_paciente()
+    elif escolha == 2:
+        agendar_consulta()
+    elif escolha == 3:
+        visualizar_lista_pacientes()
+    elif escolha == 4:
+        print(Fore.RED + "Saindo do sistema. Até logo!" + Style.RESET_ALL)
+        break
+    else:
+        print(Fore.YELLOW + "Opção inválida. Por favor, escolha uma opção válida." + Style.RESET_ALL)
