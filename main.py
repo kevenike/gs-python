@@ -58,3 +58,13 @@ def visualizar_lista_pacientes():
             print("  Nenhuma consulta agendada.")
 
     print()       
+
+# Função para validar entrada numérica
+def validar_numero(mensagem):
+    while True:
+        try:
+            numero = int(input(mensagem))
+            return numero
+        except ValueError:
+            print("Por favor, digite um número válido.")
+
